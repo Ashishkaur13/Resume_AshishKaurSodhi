@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100vh;
+}
+
+.left-section {
+  background-color: #1f416c;
+  color: white;
+  display: grid;
+}
+
+.photo {
+  width: 180px; 
+  height: 180px; 
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px; 
+  margin-left: 75px;
+}
+
+.photo img {
+  max-width: 110%; 
+  max-height: 100%; 
+}
+
+.contact-info {
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info .label {
+  font-weight: bold;
+}
+
+.contact-info .sticker {
+  background-color: #0077B5;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.left-headings {
+  padding: 2% 0%;
+  
+}
+
+.summary {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.achievements {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.languages {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.right-section {
+  background-color: #f0f0f0;
+}
+
+.name {
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+  font-size: 30px;
+}
+
+.headings {
+  text-decoration: underline;
+}
+
+.right-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #333;
+}
+
+.right-section .name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.right-section hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.right-section .projects,
+.right-section .training,
+.right-section .skills,
+.right-section .education {
+  margin-bottom: 20px;
+}
+
+.right-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.right-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.right-section p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.right-section pre {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 100%; /* Full-width for small screens */
+  }
+
+  .left-section {
+    grid-template-rows: auto; /* Allow content to determine row size */
+  }
+  
+  .right-section {
+    padding: 10px; /* Adjust padding for small screens */
+  }
+}
